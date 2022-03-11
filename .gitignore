@@ -1,4 +1,7 @@
 # Don't commit Node Modules
 node_modules/
 
+# removing IDE folder
+.idea/
+# removing individual files 
 package-lock.json
