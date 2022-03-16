@@ -40,7 +40,7 @@ const server = http.createServer(function (req, res) {
     fs.readFile(req.url.split('/').pop() || "index.html", function (error, data) {
         if (error) {
             res.writeHead(404);
-            res.write("Error: File not found");
+            res.write("Error: Not able to find the File",req.url);
         } else {
             res.write(data);
         }
