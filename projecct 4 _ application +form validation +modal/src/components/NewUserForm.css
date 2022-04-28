@@ -1,0 +1,24 @@
+#inputModal {
+    background-color: white;
+    border-radius: 10px;
+    width: 50% ;
+    padding: 10px;
+    margin: 50px auto auto;
+}
+
+#inputModal div{
+    padding:5px;
+}
+
+#inputModal label{
+    font-weight: bold;
+}
+
+#inputModal button{
+    background-color: rebeccapurple;
+    color:white;
+}
+
+#inputModal input {
+    width : 100%;
+}
