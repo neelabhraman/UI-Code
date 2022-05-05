@@ -1,8 +1,14 @@
 import "./Popup.css";
 
-const Popup = () => {
+const Popup = (props) => {
     return (
-        <div id="displaySection">
+        <div class="container">
+            <div id="popupHeader">
+                Invalid input
+            </div>
+            <div id="popupContent">
+                Please enter valid- TODO
+            </div>
 
         </div>
     );

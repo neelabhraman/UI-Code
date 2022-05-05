@@ -1,6 +1,7 @@
 import NewUserForm from "./components/NewUserForm";
 import UserList from "./components/UserList";
 import {useState} from "react";
+import Popup from "./components/Popup";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <div>
             <NewUserForm userList={userList} onAddNewUser={addNewUser}></NewUserForm>
             <UserList userList={userList}></UserList>
+            <Popup></Popup>
         </div>
     )
         ;

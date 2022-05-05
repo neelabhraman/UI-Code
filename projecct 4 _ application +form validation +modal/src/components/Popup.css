@@ -1,0 +1,18 @@
+.container {
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    margin: 50px auto auto;
+}
+
+#popupHeader{
+    background-color: rebeccapurple;
+    color:white;
+    font-size: large;
+    height: 50px;
+    font-weight: bold;
+}
+
+#popupContent{
+    background-color: white;
+}
