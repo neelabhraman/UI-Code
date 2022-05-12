@@ -1,15 +1,28 @@
 import "./Popup.css";
 
 const Popup = (props) => {
-    return (
-        <div class="container">
-            <div id="popupHeader">
-                Invalid input
-            </div>
-            <div id="popupContent">
-                Please enter valid- TODO
-            </div>
 
+    const popupButtonHandler = (event) => {
+        console.log("Cancel Clicked");
+        props.showHideOverLay();
+    };
+
+    return (
+        <div id="popupOverlay" className={!props.toggleModalPopup ? 'overLayHidden' : 'overLayVisible'}>
+            {/*this is the overlay which makes background fade*/}
+
+            {/*Now starts the modal*/}
+            <div className="popupContainer">
+                <div id="popupHeader">
+                    Invalid input
+                </div>
+                <div id="popupContent">
+                    {props.popupMsg}
+                </div>
+                <div id="buttonContent">
+                    <button id="cancelButton" type="button" onClick={popupButtonHandler}>Okay</button>
+                </div>
+            </div>
         </div>
     );
 }
