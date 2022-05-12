@@ -14,7 +14,7 @@ const Popup = (props) => {
             {/*Now starts the modal*/}
             <div className="popupContainer">
                 <div id="popupHeader">
-                    Invalid input
+                    {props.headerMsg}
                 </div>
                 <div id="popupContent">
                     {props.popupMsg}

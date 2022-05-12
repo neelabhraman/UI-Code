@@ -4,6 +4,10 @@ import {useState} from "react";
 const NewUserForm = (props) => {
         const ERROR_MSG_1 = "Please enter a valid name and age (non-empty values).";
         const ERROR_MSG_2 = "Please enter a valid age(>0).";
+        const SUCCESS = "SUCCESS";
+        const WARNING = "WARNING";
+        const ERROR = "ERROR";
+        const INVALID_INPUT="Invalid input";
         //using Object in case we want to increase the number of items in the form
         const [userInput, setUserInput] = useState({
             enteredName: "",
@@ -44,14 +48,14 @@ const NewUserForm = (props) => {
         //validation 1. Invoked by wrapper
         const formEmptyValidation = () => {
             if (userInput.enteredName === "" || userInput.enteredAge === "") {
-                props.showHideOverLay(ERROR_MSG_1);
+                props.showHideOverLay(INVALID_INPUT,ERROR_MSG_1,ERROR);
                 return true;
             }
         };
         //validation 2. Invoked by wrapper
         const ageInvalidValidation = () => {
             if (userInput.enteredAge <= 0) {
-                props.showHideOverLay(ERROR_MSG_2);
+                props.showHideOverLay(INVALID_INPUT,ERROR_MSG_2,ERROR);
                 return true;
             }
         };
@@ -85,7 +89,7 @@ const NewUserForm = (props) => {
                         <label>Age(Years)</label>
                     </div>
                     <div>
-                        <input id='age'  type="number" value={userInput.enteredAge} onChange={ageChangeHandler}/>
+                        <input id='age' type="number" value={userInput.enteredAge} onChange={ageChangeHandler}/>
                     </div>
                     <div>
                         <button id="submitButton" type="submit">Add User</button>
