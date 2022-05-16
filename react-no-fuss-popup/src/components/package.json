@@ -1,0 +1,24 @@
+{
+  "name": "react-no-fuss-popup",
+  "version": "1.0.0",
+  "description": "Popup Component for React to Show notifications of Success/Warning/Info/Error",
+  "main": "Popup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neelabhraman/UI-Code/tree/main/react-no-fuss-popup"
+  },
+  "keywords": [
+    "#Popup",
+    "#React",
+    "#NoFuss",
+    "#Popup_React"
+  ],
+  "author": "Neelabh Raman",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^18.1.0"
+  }
+}
