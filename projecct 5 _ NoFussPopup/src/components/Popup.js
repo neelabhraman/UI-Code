@@ -1,7 +1,7 @@
-import "./Popup.css";
+import styles from "./Popup.module.css";
 
 const Popup = (props) => {
-let autoClosePopUpTimer;
+    let autoClosePopUpTimer;
     if (props.autoClosePopup) {
         //hide the button in JSX, see in the return section
         //then toggle to hide the popup after user Stipulated time
@@ -11,7 +11,7 @@ let autoClosePopUpTimer;
         }, props.autoCloseTime * 1000);
     }
     const popupButtonHandler = (event) => {
-        if(["popupOverlay","cancelButton"].indexOf(event.target.id)<0){
+        if (!(event.target.id.includes("popupOverlay") || event.target.id.includes("cancelButton"))) {
             return;
         }
         console.log("manually Closed");
@@ -21,20 +21,20 @@ let autoClosePopUpTimer;
         props.showHideOverLay("", "", "", "", "");
     };
     return (
-        <div id="popupOverlay" className={!props.toggleModalPopup ? 'overLayHidden' : 'overLayVisible'} onClick={popupButtonHandler}>
+        <div id={styles.popupOverlay} className={!props.toggleModalPopup ? styles.overLayHidden : styles.overLayVisible}
+             onClick={popupButtonHandler}>
             {/*this is the overlay which makes background fade*/}
-
             {/*Now starts the modal*/}
-            <div id="popupContainer" className={props.className}>
-                <div id="popupHeader">
+            <div id={styles.popupContainer} className={`${styles[props.className]}`}>
+                <div id={styles.popupHeader}>
                     {props.headerMsg}
                 </div>
-                <div id="popupContent" className={props.autoClosePopup ? 'centreAlignedMsg' : ''}>
+                <div id={styles.popupContent} className={props.autoClosePopup ? styles.centreAlignedMsg : ''}>
                     {props.popupMsg}
                 </div>
-                <div id="buttonContent">
+                <div id={styles.buttonContent}>
                     {props.autoClosePopup ? "" : (
-                        <button id="cancelButton" type="button">Okay</button>)}
+                        <button id={styles.cancelButton} type="button">Okay</button>)}
                 </div>
             </div>
         </div>
