@@ -1,54 +1,54 @@
 Popup Component for React to Show notifications of Success/Warning/Info/Error  
 
-1 This component supports 4 types of Popup.  
-	1.1 Success  
-	1.2 arning(which can be used as Info as Well)  
-	1.3 Error  
+1. This component supports 4 types of Popup.  
+	&nbsp;&nbsp;a. Success  
+	&nbsp;&nbsp;b. Warning(which can be used as Info as Well)  
+	&nbsp;&nbsp;c. Error  
 
-2 The No Fuss POP component can be customized to:  
-	2.1 Show desired popup "of type"- STRING  
-		2.1.1  "success"  
-		2.1.2  "warning_info"  
-		2.1.3 "error"  
-	2.2 Show custom Header in the popup- STRING  
-	2.3 Show custom Message in the popup- STRING  
-	2.4 auto close based on a boolean value- BOOLEAN  
-	2.5 The auto close delay can be set "in SECONDS"- NUMBER  
+2. The No Fuss POP component can be customized to:  
+	&nbsp;&nbsp; a. Show desired "type of popup"- STRING  
+		&nbsp;&nbsp;&nbsp;&nbsp; i.  "success"  
+		&nbsp;&nbsp;&nbsp;&nbsp; ii.   "warning_info"  
+		&nbsp;&nbsp;&nbsp;&nbsp; iii.  "error"  
+	&nbsp;&nbsp; b. Show custom Header in the popup- STRING  
+	&nbsp;&nbsp; c. Show custom Message in the popup- STRING  
+	&nbsp;&nbsp; d. auto close based on a boolean value- BOOLEAN  
+	&nbsp;&nbsp; e. The auto close delay can be set "in SECONDS"- NUMBER  
 	
 3. Install the component using the command:  
-	npm i react-no-fuss-popup  
+	&nbsp; npm i react-no-fuss-popup  
 
 4. Use the below import from "dist" folder for the component in your application  
-	import Popup from "react-no-fuss-popup/dist/Popup";  
+	&nbsp; import Popup from "react-no-fuss-popup/dist/Popup";  
 
 5. JSX to incorporate the popup  
-	<Popup className={popupType} headerMsg={headerMsg} popupMsg={popupMsg} toggleModalPopup={toggleModalPopup}  
-                   showHideOverLay={showHideOverLay} autoClosePopup={autoClosePopup}  
-                   autoCloseTime={autoCloseTime}></Popup>  
+	&nbsp;&nbsp; <Popup className={popupType} headerMsg={headerMsg} popupMsg={popupMsg} toggleModalPopup={toggleModalPopup}  
+                   &nbsp;&nbsp;  showHideOverLay={showHideOverLay} autoClosePopup={autoClosePopup}  
+                   &nbsp;&nbsp;  autoCloseTime={autoCloseTime}></Popup>  
 				   
-	where   
-	a. popupType is a STRING. Valid Values are "success", "warning_info", "error"  
-	b. headerMsg is a STRING. Valid Values are any string  
-	c. popupMsg is a STRING. Valid Values are any string  
-	c. toggleModalPopup is a BOOLEAN. Valid Values are true, false  
-	d. toggleModalPopup is a function. Valid method is:  
-								/*type can be SUCCESS, WARNING, ERROR*/  
-								const showHideOverLay = (headerMsg, popupMsg, type, autoClosePopup,autoCloseTime) => {  
-									setToggleModalPopup((prevState) => {  
-										return !prevState;  
-									});
-									//setting the header msg and popup Msg  
-									setHeaderMsg(headerMsg);  
-									setPopupMsg(popupMsg);  
-									setPopupType(type);  
-									setAutoClosePopup(autoClosePopup);  
-									setAutoCloseTime(autoCloseTime);  
-								};  
-	e. autoClosePopup is a BOOLEAN. Valid Values are true, false  
-	f. autoCloseTime is a NUMBER. Valid Values poistive integers  
+	&nbsp;&nbsp; where   
+	&nbsp;&nbsp; a. popupType is a STRING. Valid Values are "success", "warning_info", "error"  
+	&nbsp;&nbsp; b. headerMsg is a STRING. Valid Values are any string  
+	&nbsp;&nbsp; c. popupMsg is a STRING. Valid Values are any string  
+	&nbsp;&nbsp; c. toggleModalPopup is a BOOLEAN. Valid Values are true, false  
+	&nbsp;&nbsp; d. toggleModalPopup is a function. Valid method is:  
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  /*type can be SUCCESS, WARNING, ERROR*/  
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  const showHideOverLay = (headerMsg, popupMsg, type, autoClosePopup,autoCloseTime) => {  
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  setToggleModalPopup((prevState) => {  
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  return !prevState;  
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  });
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  //setting the header msg and popup Msg  
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  setHeaderMsg(headerMsg);  
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  setPopupMsg(popupMsg);  
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  setPopupType(type);  
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  setAutoClosePopup(autoClosePopup);  
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  setAutoCloseTime(autoCloseTime);  
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  };  
+	&nbsp;&nbsp; e. autoClosePopup is a BOOLEAN. Valid Values are true, false  
+	&nbsp;&nbsp; f. autoCloseTime is a NUMBER. Valid Values poistive integers  
 
 6. The Demo code is availble here:  
-https://github.com/neelabhraman/UI-Code/tree/main/projecct%205%20_%20NoFussPopup  
+&nbsp;&nbsp;  https://github.com/neelabhraman/UI-Code/tree/main/projecct%205%20_%20NoFussPopup  
 
 7.Video Recording of Walkthrough to be Published on 20th May,2022  
 
