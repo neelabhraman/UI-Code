@@ -22,9 +22,9 @@ Popup Component for React to Show notifications of Success/Warning/Info/Error
 	&nbsp; import Popup from "react-no-fuss-popup/dist/Popup";  
 
 5. JSX to incorporate the popup  
-	&nbsp;&nbsp; <Popup className={popupType} headerMsg={headerMsg} popupMsg={popupMsg} toggleModalPopup={toggleModalPopup}  
+	&nbsp;&nbsp; \<Popup className={popupType} headerMsg={headerMsg} popupMsg={popupMsg} toggleModalPopup={toggleModalPopup}  
                    &nbsp;&nbsp;  showHideOverLay={showHideOverLay} autoClosePopup={autoClosePopup}  
-                   &nbsp;&nbsp;  autoCloseTime={autoCloseTime}></Popup>  
+                   &nbsp;&nbsp;  autoCloseTime={autoCloseTime}\>\</Popup\>  
 				   
 	&nbsp;&nbsp; where   
 	&nbsp;&nbsp; a. popupType is a STRING. Valid Values are "success", "warning_info", "error"  
