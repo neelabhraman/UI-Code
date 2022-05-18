@@ -1,7 +1,8 @@
 import NewUserForm from "./components/NewUserForm";
 import UserList from "./components/UserList";
 import {useState} from "react";
-import Popup from "./components/Popup";
+import React from "react";
+import Popup from "react-no-fuss-popup/dist/Popup";
 
 function App() {
 
