@@ -1,6 +1,6 @@
 {
   "name": "react-no-fuss-popup",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Popup Component for React to Show notifications of Success/Warning/Info/Error",
   "main": "./lib/Popup.js",
   "scripts": {
