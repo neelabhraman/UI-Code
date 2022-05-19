@@ -2,16 +2,13 @@ import './NewUserForm.css';
 import {useState} from "react";
 
 const NewUserForm = (props) => {
-        const ERROR_MSG_1 = "Please enter a valid name and age (non-empty values).";
-        const ERROR_MSG_2 = "Please enter a valid age(>0).";
+        const MSG_1 = "Please enter a valid name and age (non-empty values).";
+        const MSG_2 = "Please enter a valid age(>0).";
         const MSG_3 = "User Added Successfully";
         const SUCCESS = "success";
-        const WARNING_HEADER_MSG = "Warning";
         const WARNING = "warning_info";
         const ERROR = "error";
-        const INVALID_INPUT = "Invalid input";
-        const AUTO_CLOSE_POPUP_TIME_IN_SEC = 3;
-        const ZERO = 0;
+        const TWO_SEC = 2;
         //using Object in case we want to increase the number of items in the form
         const [userInput, setUserInput] = useState({
             enteredName: "",
@@ -36,7 +33,7 @@ const NewUserForm = (props) => {
             console.log("form submitted", userInput.enteredName, userInput.enteredAge);
             // remove the entered value
             setUserInput({enteredName: "", enteredAge: ""});
-            props.showHideOverLay(SUCCESS, MSG_3, SUCCESS, true, AUTO_CLOSE_POPUP_TIME_IN_SEC);
+            props.showHideOverLay("Success Message Header", MSG_3, SUCCESS, true, TWO_SEC);
 
         };
 
@@ -53,14 +50,14 @@ const NewUserForm = (props) => {
         //validation 1. Invoked by wrapper
         const formEmptyValidation = () => {
             if (userInput.enteredName === "" || userInput.enteredAge === "") {
-                props.showHideOverLay(INVALID_INPUT, ERROR_MSG_1, ERROR, false,ZERO);
+                props.showHideOverLay("Error Message Header", MSG_1, ERROR, false);
                 return true;
             }
         };
         //validation 2. Invoked by wrapper
         const ageInvalidValidation = () => {
             if (userInput.enteredAge <= 0) {
-                props.showHideOverLay(WARNING_HEADER_MSG, ERROR_MSG_2, WARNING, false);
+                props.showHideOverLay("Warning Message Header", MSG_2, WARNING, false);
                 return true;
             }
         };
