@@ -41,5 +41,5 @@ const Popup = (props) => {
         </div>
     );
 }
-
+Popup.displayName  = "Popup";
 export default Popup;
