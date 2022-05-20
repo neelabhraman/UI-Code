@@ -1,6 +1,9 @@
 
 # Popup Component for React to Show notifications of Success/Warning/Info/Error  
 
+Detailed Feature details with snapshots are here:  
+https://github.com/neelabhraman/UI-Code/blob/main/projecct%205%20_%20NoFussPopup/Features%20and%20Demo%20for%20react-no-fuss-popup%20-%20Google%20Docs.pdf  
+
 1. This component supports 4 types of Popup.  
 	&nbsp;&nbsp;a. Success  
 	&nbsp;&nbsp;b. Warning(which can be used as Info as Well)  
@@ -34,8 +37,8 @@
 	&nbsp;&nbsp; a. popupType is a **STRING, Valid Values** are "success", "warning_info", "error"  
 	&nbsp;&nbsp; b. headerMsg is a **STRING. Valid Values** are any string  
 	&nbsp;&nbsp; c. popupMsg is a **STRING. Valid Values** are any string  
-	&nbsp;&nbsp; c. toggleModalPopup is a **BOOLEAN. Valid Values** are true, false  
-	&nbsp;&nbsp; d. toggleModalPopup is a **function. Valid method** is:  
+	&nbsp;&nbsp; d. toggleModalPopup is a **BOOLEAN. Valid Values** are true, false  
+	&nbsp;&nbsp; e. showHideOverLay is a **function. Valid method** is:  
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  /*type can be SUCCESS, WARNING, ERROR*/  
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  const showHideOverLay = (headerMsg, popupMsg, type, autoClosePopup,autoCloseTime) => {  
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  setToggleModalPopup((prevState) => {  
@@ -48,8 +51,8 @@
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  setAutoClosePopup(autoClosePopup);  
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  setAutoCloseTime(autoCloseTime);  
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  };  
-	&nbsp;&nbsp; e. autoClosePopup is a **BOOLEAN. Valid Values** are true, false  
-	&nbsp;&nbsp; f. autoCloseTime is a **NUMBER. Valid Values** poistive integers  
+	&nbsp;&nbsp; f. autoClosePopup is a **BOOLEAN. Valid Values** are true, false  
+	&nbsp;&nbsp; g. autoCloseTime is a **NUMBER. Valid Values** poistive integers  
 
 7. The **Demo code** is availble here:  
 &nbsp;&nbsp;  https://github.com/neelabhraman/UI-Code/blob/main/projecct%205%20_%20NoFussPopup/src/App.js
