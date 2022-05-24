@@ -50,7 +50,7 @@ const NewUserForm = (props) => {
         //validation 1. Invoked by wrapper
         const formEmptyValidation = () => {
             if (userInput.enteredName === "" || userInput.enteredAge === "") {
-                props.showHideOverLay("Error Message Header", MSG_1, ERROR, false);
+                props.showHideOverLay("2 46PM", "My DEMo Msg", ERROR, false);
                 return true;
             }
         };
@@ -82,13 +82,13 @@ const NewUserForm = (props) => {
             <div id='inputModal'>
                 <form onSubmit={formSubmitHandler}>
                     <div>
-                        <label>Username</label>
+                        <label htmlFor="username">Username</label>
                     </div>
                     <div>
                         <input id='username' type="text" value={userInput.enteredName} onChange={nameChangeHandler}/>
                     </div>
                     <div>
-                        <label>Age(Years)</label>
+                        <label htmlFor="age">Age(Years)</label>
                     </div>
                     <div>
                         <input id='age' type="number" value={userInput.enteredAge} onChange={ageChangeHandler}/>

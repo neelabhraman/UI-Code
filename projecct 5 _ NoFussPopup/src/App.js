@@ -35,7 +35,7 @@ function App() {
 
     return (
         <div>
-            <NewUserForm userList={userList} onAddNewUser={addNewUser} showHideOverLay={showHideOverLay}></NewUserForm>
+            <NewUserForm  onAddNewUser={addNewUser} showHideOverLay={showHideOverLay}></NewUserForm>
             <UserList userList={userList}></UserList>
             <Popup className={popupType} headerMsg={headerMsg} popupMsg={popupMsg} toggleModalPopup={toggleModalPopup}
                    showHideOverLay={showHideOverLay} autoClosePopup={autoClosePopup}

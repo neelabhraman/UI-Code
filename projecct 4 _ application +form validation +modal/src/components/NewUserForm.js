@@ -80,13 +80,13 @@ const NewUserForm = (props) => {
             <div id='inputModal'>
                 <form onSubmit={formSubmitHandler}>
                     <div>
-                        <label>Username</label>
+                        <label htmlFor="username">Username</label>
                     </div>
                     <div>
                         <input id='username' type="text" value={userInput.enteredName} onChange={nameChangeHandler}/>
                     </div>
                     <div>
-                        <label>Age(Years)</label>
+                        <label htmlFor="age">Age(Years)</label>
                     </div>
                     <div>
                         <input id='age' type="number" value={userInput.enteredAge} onChange={ageChangeHandler}/>
