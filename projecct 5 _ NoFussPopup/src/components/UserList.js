@@ -2,7 +2,7 @@ import "./UserList.css";
 
 const UserList = (props) => {
 
-    if(props.userList.length <1){
+    if (props.userList.length < 1) {
         return <div></div>;
     }
     return (
