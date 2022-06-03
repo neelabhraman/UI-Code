@@ -1,11 +1,15 @@
 
-# Popup Component for React to Show notifications of Success/Warning/Info/Error  
+# Popup Component for React to Show notifications of Success/Warning/Info/Error    
 
-## Detailed Feature details with snapshots are here:   
+
+A simple, easy to integrate robust and multi-functional popup for your React Project.
+
+
+###### Detailed PDF with snapshots of the behaviour:   
 
 https://github.com/neelabhraman/UI-Code/blob/main/projecct%205%20_%20NoFussPopup/Features%20and%20Demo%20for%20react-no-fuss-popup%20-%20Google%20Docs.pdf  
 
-## Video recording of feature walkthrough and Demo project:
+######  Video recording of walkthrough and Demo project:
 
 https://www.youtube.com/watch?v=Yytaxy0eHzk
 
@@ -29,7 +33,7 @@ https://www.youtube.com/watch?v=Yytaxy0eHzk
 	
 
 4. The **Demo code** is availble here:  
-&nbsp;&nbsp;  https://github.com/neelabhraman/UI-Code/blob/main/projecct%205%20_%20NoFussPopup/src/App.js
+&nbsp;https://github.com/neelabhraman/UI-Code/blob/main/projecct%205%20_%20NoFussPopup/src/App.js
 
  
 	
